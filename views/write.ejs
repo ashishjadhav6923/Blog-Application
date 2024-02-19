@@ -1,0 +1,18 @@
+<%- include("partials/head.ejs") %>
+    <%- include("partials/navbar.ejs") %>
+        <main class="main min-vh-100">
+            <div class="container mt-4">
+                <div class="mb-3">
+                    <h3>Choose a name for your blog</h3>
+                    <form action="/write" method="POST">
+                        <label for="BlogName" class="form-label">This is the title that will be displayed at the top of your Blog.</label>
+                        <input type="text" id="BlogName" name="BlogName" class="form-control mb-3" placeholder="Title">
+                        <label for="Content" class="form-label">Content</label>
+                        <input type="text" name="Content" id="Content" placeholder="Write Content Here" class="form-control mb-3">
+                        <input type="submit" value="Submit Blog" class="mb-3 btn btn-dark">
+                      </form>
+                </div>
+            </div>
+
+        </main>
+        <%- include("partials/footer.ejs") %>

@@ -1,0 +1,24 @@
+<main class="main min-vh-100">
+    <h1 class="text-center m-4">Discover Engaging Content for Every Interest</h1>
+    <div class="text-center m-4">
+        <a href="/write">
+            <button type="button" class="btn btn-primary btn-lg">Create Your Blog</button>
+        </a>
+    </div>
+    <div class="container">
+        <% for(let i=0;i<allData.length;i++){ %>
+        <div class="card col m-2">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h5 class="card-title"><%= allData[i].BlogName %></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="data/<%= allData[i].BlogName %>" class="btn btn-primary">Read</a>
+            </div>
+        </div>
+        <%  } %>
+    </div>
+
+    </div>
+
+</main>
